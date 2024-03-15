@@ -59,7 +59,7 @@ class _Screen2State extends State<Screen2> {
         'date': '11 NOV',
         'Brand': 'TOYOTA',
         'Des':
-            '''single handed used with lethar seat cover hy music system touch screen and diamond cut alloy wheels
+        '''single handed used with lethar seat cover hy music system touch screen and diamond cut alloy wheels
 
 ADDITIONAL VEHICLE INFORMATION:
 
@@ -157,13 +157,13 @@ Adjustable External Mirror: Power
               Padding(
                 padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
                 child: TextField(
-                    // controller: textinput,
+                  // controller: textinput,
                     decoration: InputDecoration(
-                  prefixIcon: Icon(Icons.search),
-                  suffixIcon: Icon(Icons.add_alert),
-                  label: Text("Find Cars,mobile Phones.."),
-                  border: OutlineInputBorder(),
-                )),
+                      prefixIcon: Icon(Icons.search),
+                      suffixIcon: Icon(Icons.add_alert),
+                      label: Text("Find Cars,mobile Phones.."),
+                      border: OutlineInputBorder(),
+                    )),
               ),
               Container(
                 margin: EdgeInsets.only(
@@ -223,37 +223,37 @@ Adjustable External Mirror: Power
                           );
                         },
                         child: Column(
-                                                    children: [
-                        Expanded(
-                          child: Image.asset(
-                            "assets/image/i1.png",
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                        Text("CARS")
-                                                    ],
-                                                  )),
+                          children: [
+                            Expanded(
+                              child: Image.asset(
+                                "assets/image/i1.png",
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                            Text("CARS")
+                          ],
+                        )),
                     InkWell(
                         onTap: () {
                           Navigator.of(context).push(
                             MaterialPageRoute(
                               builder: (context) {
-                                return Prop();
+                                return prop();
                               },
                             ),
                           );
                         },
                         child: Column(
-                                                  children: [
-                        Expanded(
-                          child: Image.asset(
-                            "assets/image/i2.png",
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                        Text("PROPERTIES")
-                                                  ],
-                                                )),
+                          children: [
+                            Expanded(
+                              child: Image.asset(
+                                "assets/image/i2.png",
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                            Text("PROPERTIES")
+                          ],
+                        )),
                     InkWell(
                         onTap: () {
                           Navigator.of(context).push(
@@ -265,16 +265,16 @@ Adjustable External Mirror: Power
                           );
                         },
                         child: Column(
-                                                  children: [
-                        Expanded(
-                          child: Image.asset(
-                            "assets/image/i3.png",
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                        Text("MOBILES")
-                                                  ],
-                                                )),
+                          children: [
+                            Expanded(
+                              child: Image.asset(
+                                "assets/image/i3.png",
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                            Text("MOBILES")
+                          ],
+                        )),
                     InkWell(
                         onTap: () {
                           Navigator.of(context).push(
@@ -286,16 +286,16 @@ Adjustable External Mirror: Power
                           );
                         },
                         child: Column(
-                                                  children: [
-                        Expanded(
-                          child: Image.asset(
-                            "assets/image/i4.png",
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                        Text("BIKES")
-                                                  ],
-                                                )),
+                          children: [
+                            Expanded(
+                              child: Image.asset(
+                                "assets/image/i4.png",
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                            Text("BIKES")
+                          ],
+                        )),
                     InkWell(
                         onTap: () {
                           Navigator.of(context).push(
@@ -307,16 +307,16 @@ Adjustable External Mirror: Power
                           );
                         },
                         child: Column(
-                                                  children: [
-                        Expanded(
-                          child: Image.asset(
-                            "assets/image/i5.png",
-                            fit: BoxFit.fill,
-                          ),
-                        ),
-                        Text("JOBS")
-                                                  ],
-                                                ))
+                          children: [
+                            Expanded(
+                              child: Image.asset(
+                                "assets/image/i5.png",
+                                fit: BoxFit.fill,
+                              ),
+                            ),
+                            Text("JOBS")
+                          ],
+                        ))
                   ],
                 ),
               ),

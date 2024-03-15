@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:olx_clone/EnterDetails.dart';
 import 'package:olx_clone/account.dart';
 import 'package:olx_clone/other/chat.dart';
 import 'package:olx_clone/other/myads.dart';
@@ -35,14 +36,21 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: (
-          Scaffold(
-        body: PageStorage(
-            bucket: bucket, child: currentscreen),
+      child: (Scaffold(
+        body: PageStorage(bucket: bucket, child: currentscreen),
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add),
           backgroundColor: Colors.white70,
-          onPressed: () => {},
+          onPressed: () {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) {
+                  return EnterDetail();
+                  // return EnterDetail(Detail: null,);
+                },
+              ),
+            );
+          },
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         bottomNavigationBar: BottomAppBar(
